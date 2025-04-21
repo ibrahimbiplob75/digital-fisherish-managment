@@ -1,32 +1,32 @@
 [
     {
         "_id": "643010e0f5a7e52ce1e8fa65",
-        "name": "Jane Doe",
-        "details": "Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        "rating": 3
+        "name": "আব্দুল করিম (মৎস্য চাষি, খুলনা)",
+        "details": "এই সিস্টেমটি ব্যবহার করে আমার মাছের খামারের উৎপাদন ২০% বৃদ্ধি পেয়েছে। পানির গুণাগুণ মনিটরিং ফিচারটি বিশেষভাবে কার্যকরী।",
+        "rating": 4
     },
     {
         "_id": "643010f9f5a7e52ce1e8fa66",
-        "name": "John Doe",
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)",
-        "rating": 2
+        "name": "নাসিমা আক্তার (হ্যাচারি মালিক, বগুড়া)",
+        "details": "ডিজিটাল স্টক ম্যানেজমেন্ট সিস্টেম আমার পোনা উৎপাদনের হিসাব রাখতে সহায়তা করছে। তবে মোবাইল অ্যাপটি কিছুটা ধীর গতির।",
+        "rating": 3
     },
     {
         "_id": "6430110af5a7e52ce1e8fa67",
-        "name": "MJ Doe",
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)",
+        "name": "রফিকুল ইসলাম (জেলে, বরিশাল)",
+        "details": "অনলাইন বাজার সংযোগের মাধ্যমে এখন সহজেই আমার মাছ বিক্রি করতে পারছি। সিস্টেমটি ব্যবহারে খুবই সহজ এবং কার্যকরী।",
         "rating": 5
     },
     {
         "_id": "64301123f5a7e52ce1e8fa68",
-        "name": "Sarah Smith",
-        "details": "I found the product to be incredibly useful and easy to use. The interface is intuitive, and it has all the features I need. Highly recommend it!",
-        "rating": 4
+        "name": "ড. সুমাইয়া আহমেদ (মৎস্য বিশেষজ্ঞ)",
+        "details": "এই প্ল্যাটফর্ম বাংলাদেশের মৎস্য খাতের ডিজিটাল রূপান্তরে গুরুত্বপূর্ণ ভূমিকা রাখছে। ডাটা বিশ্লেষণের সুবিধা অসাধারণ।",
+        "rating": 5
     },
     {
         "_id": "6430113af5a7e52ce1e8fa69",
-        "name": "Robert Johnson",
-        "details": "This is by far the best service I have ever used. The customer support is outstanding, and the product itself is top-notch. I couldn't be happier!",
-        "rating": 5
+        "name": "তানভীর হোসেন (ক্ষুদ্র উদ্যোক্তা, সিলেট)",
+        "details": "সিস্টেমটি ব্যবহার করে আমার ছোট ব্যবসাটি এখন অনেক সহজে পরিচালনা করতে পারছি। তবে কিছু ফিচার আরও উন্নত করা প্রয়োজন।",
+        "rating": 4
     }
 ]

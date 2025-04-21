@@ -16,7 +16,7 @@ const Swipper = () => {
   return (
     <section className="py-12 bg-gray-50">
       {/* Enhanced Section Title */}
-      <SectionTitle subTitle={"welcome"} title={"Our services"} />
+      <SectionTitle subTitle={"স্বাগতম"} title={"আমাদের সেবা সমূহ"} />
 
       {/* Swiper Container */}
       <Swiper

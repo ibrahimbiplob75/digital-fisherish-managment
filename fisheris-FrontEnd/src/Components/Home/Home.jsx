@@ -1,10 +1,8 @@
 import CarouselSlider from "./CarouselSlider";
-import Featured from "./Featured";
-import PopularMenu from "./PopularMenu";
 import Recomend from "./Recomend";
 import Swipper from "./Swipper";
 import Testimonials from "./Testimonials";
-import bg_img from "../../assets/home/banner.jpg";
+import bg_img from "../../assets/cover-7.jpg";
 
 const Home = () => {
   return (
@@ -26,12 +24,14 @@ const Home = () => {
       >
         <div className="hero-overlay bg-opacity-70 bg-black"></div>
         <div className="hero-content flex flex-col lg:flex-row-reverse items-center justify-center text-center text-white lg:text-left w-full lg:w-3/4 mx-auto py-10 lg:py-20">
-          <div className="max-w-md px-6 lg:px-12">
+          <div className="max-w-xl px-6 lg:px-8">
             <h1 className="mb-5 text-4xl lg:text-5xl font-bold">
               Digital Aquaculture Management System
             </h1>
             <p className="mb-6 text-base lg:text-lg">
-              
+              আমরা আপনাদের জন্য নিয়ে এসেছি একটি সম্পূর্ণ ডিজিটাল অ্যাকুয়াকালচার ম্যানেজমেন্ট সিস্টেম, যা মাছ চাষ, হ্যাচারি ব্যবস্থাপনা, ফিশারিজ বিপণন এবং সম্পদ ট্র্যাকিংকে সম্পূর্ণরূপে ডিজিটালাইজড ও স্বয়ংক্রিয় করে তুলবে।
+
+              এই সিস্টেমের মাধ্যমে মৎস্য চাষিরা তাদের উৎপাদন প্রক্রিয়াকে আরও সহজভাবে নিয়ন্ত্রণ করতে পারবেন, বাজারজাতকরণের সুবিধা পাবেন এবং লাভজনকভাবে ব্যবসা পরিচালনা করতে সক্ষম হবেন।
             </p>
             <button className="btn btn-primary transition-all duration-300 transform hover:scale-105">
               Know More
@@ -39,11 +39,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* Popular Menu Section */}
-      <section className="my-16">
-        <PopularMenu />
-      </section>
 
       {/* Call to Action Section */}
       <section className="bg-slate-600 py-10">
@@ -60,9 +55,9 @@ const Home = () => {
       </section>
 
       {/* Featured Dishes Section */}
-      <section className="my-16">
+      {/* <section className="my-16">
         <Featured />
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
       <section className="my-16">

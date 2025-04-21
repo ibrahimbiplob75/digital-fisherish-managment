@@ -17,9 +17,9 @@ const Header = () => {
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'মাছ বাজার', href: '#', current: false },
+  { name: 'পোনা মাছ', href: '#', current: false },
+  { name: 'About Us', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -57,9 +57,9 @@ function classNames(...classes) {
   
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+    <Disclosure as="nav" className="bg-gray-800 h-24">
+      <div className="mx-auto max-w-7xl px-2 i  sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center justify-between ">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center h-12 w-12 justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">

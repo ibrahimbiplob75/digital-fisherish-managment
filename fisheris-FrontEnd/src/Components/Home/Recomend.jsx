@@ -12,8 +12,8 @@ const Recomend = () => {
     return (
       <section>
         <SectionTitle
-          subTitle="---Should Try---"
-          title={"CHEF RECOMMENDS"}
+          subTitle="--- প্রয়োজনীয় পণ্য বাছাই ---"
+          title={"অধিক বিক্রিত"}
         ></SectionTitle>
         <div className='grid grid-cols-4 gap-4'>
           {items.slice(0, 4).map((item) => (

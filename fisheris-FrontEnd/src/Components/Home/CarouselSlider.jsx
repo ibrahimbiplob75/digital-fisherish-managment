@@ -12,7 +12,7 @@ const CarouselSlider = () => {
   return (
     <Carousel >
       <div>
-        <img className="" src={slider1} />
+        <img src={slider1} />
       </div>
       <div>
         <img src={slider2} />

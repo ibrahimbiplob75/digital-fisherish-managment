@@ -22,8 +22,8 @@ const Testimonials = () => {
     return (
       <section className="my-20">
         <SectionTitle
-          subTitle="What Our Client Say"
-          title={"Testimonials"}
+          subTitle="আমাদের পরিষেবা সম্পর্কে"
+          title={"ক্রেতা"}
         ></SectionTitle>
 
         <Swiper
