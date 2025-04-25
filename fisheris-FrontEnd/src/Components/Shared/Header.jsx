@@ -17,8 +17,8 @@ const Header = () => {
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'মাছ বাজার', href: '#', current: false },
-  { name: 'পোনা মাছ', href: '#', current: false },
+  { name: 'মাছ বাজার', href: '/fishmarket', current: false },
+  { name: 'পোনা মাছ', href: '/hechary', current: false },
   { name: 'About Us', href: '#', current: false },
 ]
 

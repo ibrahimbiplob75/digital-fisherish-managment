@@ -7,7 +7,7 @@ import UseAxiosSecure from '../../AxiosSecure/UseAxiosSecure';
 import AxiosPublic from '../../AxiosPublic/AxiosPublic';
 
 
-const FoodCard = ({ item }) => {
+const FishCard = ({ item }) => {
      const { name, image, price, recipe, _id } = item;
      const {user}=useContext(AuthProvider);
      const navigate = useNavigate();
@@ -84,4 +84,4 @@ const FoodCard = ({ item }) => {
   );
 };
 
-export default FoodCard;
+export default FishCard;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../Shared/SectionTitle';
-import FoodCard from '../Shared/FoodCard';
+import FoodCard from '../Shared/FishCard';
 
 const Recomend = () => {
     const [items,setItems]=useState([]);

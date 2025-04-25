@@ -6,8 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import Home from './Components/Home/Home.jsx';
-import OurMenu from './Components/Menu/OurMenu.jsx';
-import OurShop from './Components/OurShop/OurShop.jsx';
+
 import Login from './Components/Login/Login.jsx';
 import SignUp from './Components/SignUp/SignUp.jsx';
 import ContextProvider from './ContextProvider/ContextProvider.jsx';
@@ -26,21 +25,14 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/menu",
-        element: <OurMenu></OurMenu>,
+        path: "/hechary",
+        element: <Hatchery></Hatchery>,
       },
       {
-        path: "/shop",
-        element: <OurShop></OurShop>,
+        path: "/fishmarket",
+        element: <FishMarket></FishMarket>,
       },
-      {
-        path: "/shop/:category",
-        element: (
-          <PrivateRoute>
-            <OurShop></OurShop>
-          </PrivateRoute>
-        ),
-      },
+      
       {
         path: "/signup",
         element: <SignUp></SignUp>,
@@ -126,6 +118,8 @@ import AddItem from './Components/Dashboard/AddItem/AddItem.jsx';
 import UpdateItem from './Components/ManageItems/UpdateItem.jsx';
 import Payment from './Components/Dashboard/Payment/Payment.jsx';
 import OrderHistory from './Components/Dashboard/Payment/OrderHistory.jsx';
+import Hatchery from './Components/OurShop/Hechaery.jsx';
+import FishMarket from './Components/OurShop/FishMarket.jsx';
 
 
 const queryClient = new QueryClient();
