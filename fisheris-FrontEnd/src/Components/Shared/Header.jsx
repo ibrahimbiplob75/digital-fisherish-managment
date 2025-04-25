@@ -131,20 +131,13 @@ function classNames(...classes) {
               >
                 <MenuItem>
                   <a
-                    href="#"
+                    href="/dashboard/home"
                     className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
                   >
                     Your Profile
                   </a>
                 </MenuItem>
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-                  >
-                    Settings
-                  </a>
-                </MenuItem>
+                
                 <MenuItem>
                   <button
                     onClick={logOut}

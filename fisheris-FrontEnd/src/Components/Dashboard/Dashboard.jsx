@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import {
   FaBars,
-  FaBookmark,
-  FaCalendar,
   FaHome,
-  FaReact,
-  FaAccusoft,
+  FaChartLine,
   FaShoppingCart,
-  FaTicketAlt,
-  FaUtensils,
-  FaWallet,
-  FaBook,
+  FaHistory,
+  FaCommentAlt,
+  FaBookmark,
+  FaFish,
+  FaWater,
+  FaUserCog,
   FaUsers,
-  FaListAlt,
+  FaClipboardList,
+  FaGlobe
 } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import CheckAdmin from "../../CheckAdmin/CheckAdmin";
@@ -21,141 +21,156 @@ const Dashboard = () => {
   const [isAdmin] = CheckAdmin();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle Sidebar
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="flex min-h-screen ">
-      {/* Toggle button for mobile */}
+    <div className="flex min-h-screen bg-gray-50">
+      {/* Mobile Toggle Button */}
       <button
         onClick={toggleSidebar}
-        className="p-4 text-orange-500 lg:hidden absolute z-50"
+        className="p-4 text-[#1A5F7A] lg:hidden absolute z-50"
       >
         <FaBars size={24} />
       </button>
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 w-64 min-h-screen bg-orange-500 p-5 shadow-lg transform transition-transform duration-300 ease-in-out z-40 lg:translate-x-0 ${
+        className={`fixed top-0 left-0 w-64 min-h-screen bg-[#1A5F7A] text-white p-5 shadow-lg transform transition-transform duration-300 ease-in-out z-40 lg:translate-x-0 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:static lg:inset-0`}
       >
-        <h2 className="text-white text-3xl font-semibold mb-8">Dashboard</h2>
-        <ul className="space-y-4">
+        <h2 className="text-white text-2xl font-bold mb-8 border-b-2 border-[#57C5B6] pb-3">
+          ড্যাশবোর্ড
+        </h2>
+        
+        <ul className="space-y-3">
           <li>
             <NavLink
               to="/dashboard/home"
-              className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+              className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+              activeClassName="bg-[#2B7DCE]"
             >
-              <FaHome className="mr-3" /> Home
+              <FaHome className="mr-3" /> হোম
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
-              to="/dashboard/reservation"
-              className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+              to="/dashboard/analytics"
+              className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+              activeClassName="bg-[#2B7DCE]"
             >
-              <FaCalendar className="mr-3" /> Reservation
+              <FaChartLine className="mr-3" /> বিশ্লেষণ
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/dashboard/cart"
-              className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+              className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+              activeClassName="bg-[#2B7DCE]"
             >
-              <FaShoppingCart className="mr-3" /> My Cart
+              <FaShoppingCart className="mr-3" /> বাজার
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/dashboard/orderHistory"
-              className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+              to="/dashboard/history"
+              className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+              activeClassName="bg-[#2B7DCE]"
             >
-              <FaListAlt className="mr-3" /> Order History
+              <FaHistory className="mr-3" /> ইতিহাস
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/dashboard/review"
-              className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+              to="/dashboard/reviews"
+              className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+              activeClassName="bg-[#2B7DCE]"
             >
-              <FaReact className="mr-3" /> Review
+              <FaCommentAlt className="mr-3" /> রিভিউ
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/dashboard/bookmark"
-              className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+              to="/dashboard/saved"
+              className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+              activeClassName="bg-[#2B7DCE]"
             >
-              <FaBookmark className="mr-3" /> Bookmark
+              <FaBookmark className="mr-3" /> সেভ করা
             </NavLink>
           </li>
 
           {isAdmin && (
             <>
-              <li className="mt-6 text-gray-200 text-lg">Admin Section</li>
+              <li className="mt-6 mb-2 text-[#57C5B6] text-lg font-medium">
+                প্রশাসক বিভাগ
+              </li>
               <li>
                 <NavLink
-                  to="/dashboard/addItem"
-                  className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+                  to="/dashboard/add-fish"
+                  className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+                  activeClassName="bg-[#2B7DCE]"
                 >
-                  <FaUtensils className="mr-3" /> Add Item
+                  <FaFish className="mr-3" /> মাছ যোগ করুন
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/manageitems"
-                  className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+                  to="/dashboard/manage-ponds"
+                  className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+                  activeClassName="bg-[#2B7DCE]"
                 >
-                  <FaWallet className="mr-3" /> Manage Items
+                  <FaWater className="mr-3" /> পুকুর ব্যবস্থাপনা
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/manageBookings"
-                  className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+                  to="/dashboard/manage-orders"
+                  className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+                  activeClassName="bg-[#2B7DCE]"
                 >
-                  <FaBook className="mr-3" /> Manage Bookings
+                  <FaClipboardList className="mr-3" /> অর্ডার ব্যবস্থাপনা
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/allusers"
-                  className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+                  to="/dashboard/users"
+                  className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
+                  activeClassName="bg-[#2B7DCE]"
                 >
-                  <FaUsers className="mr-3" /> All Users
+                  <FaUsers className="mr-3" /> ব্যবহারকারীরা
                 </NavLink>
               </li>
             </>
           )}
         </ul>
-        <div className="border-t border-gray-600 mt-8 pt-5">
+
+        <div className="border-t border-[#57C5B6] mt-8 pt-5">
           <NavLink
             to="/"
-            className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all"
+            className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
           >
-            <FaAccusoft className="mr-3" /> Website
+            <FaGlobe className="mr-3" /> মূল ওয়েবসাইট
           </NavLink>
           <NavLink
-            to="/menu"
-            className="flex items-center text-white hover:bg-orange-600 px-4 py-2 rounded-lg transition-all mt-4"
+            to="/fish-market"
+            className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all mt-3"
           >
-            <FaTicketAlt className="mr-3" /> Menu
+            <FaFish className="mr-3" /> মাছের বাজার
           </NavLink>
         </div>
       </div>
 
       {/* Content Area */}
       <div
-        className="flex-1 p-10 transition-all lg:ml-64"
-        onClick={() => setIsOpen(false)} // Close sidebar when clicking outside on mobile
+        className="flex-1 p-6 transition-all lg:ml-64 bg-[#f5f9fc]"
+        onClick={() => setIsOpen(false)}
       >
         <Outlet />
       </div>
 
-      {/* Background overlay when sidebar is open on mobile */}
+      {/* Mobile Overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 lg:hidden"

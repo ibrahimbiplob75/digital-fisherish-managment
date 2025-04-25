@@ -3,7 +3,7 @@
         "_id": "642c155b2c4774f05c36eeaa",
         "name": "স্মার্ট পুকুর মনিটরিং কিট",
         "description": "পিএইচ, অক্সিজেন এবং তাপমাত্রা সেন্সর সহ সম্পূর্ণ আইওটি-ভিত্তিক জল পর্যবেক্ষণ সিস্টেম",
-        "image": "https://example.com/images/pond-monitor.jpg",
+        "image": "https://as1.ftcdn.net/jpg/01/21/27/60/1000_F_121276045_Q4j41GR5DL8lvUlR90MT4X8hCX8fHjIY.jpg",
         "category": "যন্ত্রপাতি",
         "price": 299.99
     },
@@ -11,7 +11,7 @@
         "_id": "642c155b2c4774f05c36eeb9",
         "name": "অ্যাকুয়াফিড প্রো ৫০০০",
         "description": "প্রোগ্রামযোগ্য সময়সূচী এবং পরিমাণ নিয়ন্ত্রণ সহ স্বয়ংক্রিয় মাছ খাওয়ানোর সিস্টেম",
-        "image": "https://example.com/images/feeder.jpg",
+        "image": "https://as1.ftcdn.net/jpg/01/21/27/60/1000_F_121276045_Q4j41GR5DL8lvUlR90MT4X8hCX8fHjIY.jpg",
         "category": "যন্ত্রপাতি",
         "price": 450.00
     },
@@ -19,7 +19,7 @@
         "_id": "642c155b2c4774f05c36ee7c",
         "name": "হ্যাচারি ব্যবস্থাপনা সফটওয়্যার",
         "description": "ফ্রাই উৎপাদন ট্র্যাকিং এবং ইনভেন্টরি ব্যবস্থাপনার জন্য সম্পূর্ণ সফটওয়্যার সমাধান",
-        "image": "https://example.com/images/software.jpg",
+        "image": "https://as2.ftcdn.net/jpg/02/24/06/63/1000_F_224066370_WPhBdPGAj7GpOZDWeaVOUlSd85t4gM33.jpg",
         "category": "সফটওয়্যার",
         "price": 199.99
     },
@@ -27,7 +27,7 @@
         "_id": "642c155b2c4774f05c36ee88",
         "name": "প্রিমিয়াম তেলাপিয়া ফিংগারলিং",
         "description": "রোগ প্রতিরোধী তেলাপিয়া ফিংগারলিং (১০০০ টি), স্টক করার জন্য প্রস্তুত",
-        "image": "https://example.com/images/tilapia.jpg",
+        "image": "https://as2.ftcdn.net/jpg/02/24/06/63/1000_F_224066370_WPhBdPGAj7GpOZDWeaVOUlSd85t4gM33.jpg",
         "category": "প্রাণিসম্পদ",
         "price": 350.00
     },
@@ -35,7 +35,7 @@
         "_id": "642c155b2c4774f05c36ee7a",
         "name": "জলজ পালন প্রশিক্ষণ কোর্স",
         "description": "আধুনিক মাছ চাষ পদ্ধতিতে ৬-সপ্তাহের অনলাইন সার্টিফিকেশন প্রোগ্রাম",
-        "image": "https://example.com/images/training.jpg",
+        "image": "https://as2.ftcdn.net/jpg/02/24/06/63/1000_F_224066370_WPhBdPGAj7GpOZDWeaVOUlSd85t4gM33.jpg",
         "category": "শিক্ষা",
         "price": 249.99
     },

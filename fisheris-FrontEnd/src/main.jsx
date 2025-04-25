@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         element: <Payment></Payment>,
       },
       {
-        path: "/dashboard/OrderHistory",
+        path: "/dashboard/history",
         element: <OrderHistory></OrderHistory>,
       },
       //Admin route
