@@ -11,22 +11,19 @@ const port=process.env.PORT || 5000;
 
 // middleware
 app.use(cors({
-    origin:["http://localhost:5173",
-            "https://restaurant-manage-72dff.web.app",
-            "https://restaurant-manage-72dff.firebaseapp.com/"
-    ],
+     origin:["http://localhost:5173"
+    // ,"https://digital-aquaculture.web.app/"
+            ],
     credentials:true,
 }));
 app.use(express.json());
 
-//RestaurantDB
-//menu
+
 
 
 
 const uri = process.env.DB_URI
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -39,10 +36,10 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
-    const userData=client.db("RestaurantDB").collection("users")
-    const Menudata=client.db("RestaurantDB").collection("menus");
-    const Cartdata=client.db("RestaurantDB").collection("CartItems");
-    const OrderData=client.db("RestaurantDB").collection("orders");
+    const userData=client.db("DigitalAquaculture").collection("users")
+    const Menudata=client.db("DigitalAquaculture").collection("menus");
+    const Cartdata=client.db("DigitalAquaculture").collection("CartItems");
+    const OrderData=client.db("DigitalAquaculture").collection("orders");
 
     //Jwt api
     app.post("/jwt",async(req,res)=>{
@@ -259,9 +256,9 @@ run().catch(console.dir);
 
 
 app.get("/",async(req,res)=>{
-    res.send("Restauarant is serving now !!!!");
+    res.send("Digital Aquaculture is serving now !!!!");
 })
 
 app.listen(port,async(req,res)=>{
-    console.log(`Restauarant server is running on port ${port}`);
+    console.log(`Digital Aquaculture server is running on port ${port}`);
 })

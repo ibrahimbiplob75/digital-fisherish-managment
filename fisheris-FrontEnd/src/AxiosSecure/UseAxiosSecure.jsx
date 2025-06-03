@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const secureAxios = axios.create({
-  //https://restuarent-server.vercel.app
+  
+  //https://fisheris-server-hwg15wayh-md-ibrahim-biplobs-projects.vercel.app/
+  //http://localhost:5000
   baseURL: "http://localhost:5000",
 });
 
