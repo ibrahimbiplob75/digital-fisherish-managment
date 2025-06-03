@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import {
   FaBars,
   FaHome,
-  FaChartLine,
   FaShoppingCart,
   FaHistory,
   FaCommentAlt,
   FaBookmark,
   FaFish,
   FaWater,
-  FaUserCog,
   FaUsers,
   FaClipboardList,
   FaGlobe
@@ -91,15 +89,7 @@ const Dashboard = () => {
               <FaCommentAlt className="mr-3" /> রিভিউ
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/dashboard/saved"
-              className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
-              activeClassName="bg-[#2B7DCE]"
-            >
-              <FaBookmark className="mr-3" /> সেভ করা
-            </NavLink>
-          </li>
+          
 
           {isAdmin && (
             <>
@@ -108,7 +98,7 @@ const Dashboard = () => {
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/add-fish"
+                  to="/dashboard/addItem"
                   className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
                   activeClassName="bg-[#2B7DCE]"
                 >
@@ -117,16 +107,16 @@ const Dashboard = () => {
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/manage-ponds"
+                  to="/dashboard/add-project"
                   className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
                   activeClassName="bg-[#2B7DCE]"
                 >
-                  <FaWater className="mr-3" /> পুকুর ব্যবস্থাপনা
+                  <FaWater className="mr-3" /> প্রকল্প যোগ করুন
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/manage-orders"
+                  to="/dashboard/manageitems"
                   className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
                   activeClassName="bg-[#2B7DCE]"
                 >
@@ -135,7 +125,7 @@ const Dashboard = () => {
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/users"
+                  to="/dashboard/allusers"
                   className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all"
                   activeClassName="bg-[#2B7DCE]"
                 >
@@ -154,7 +144,7 @@ const Dashboard = () => {
             <FaGlobe className="mr-3" /> মূল ওয়েবসাইট
           </NavLink>
           <NavLink
-            to="/fish-market"
+            to="/fishmarket"
             className="flex items-center hover:bg-[#2B7DCE] px-4 py-3 rounded-lg transition-all mt-3"
           >
             <FaFish className="mr-3" /> মাছের বাজার

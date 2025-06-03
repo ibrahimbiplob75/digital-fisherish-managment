@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthProvider } from '../../ContextProvider/ContextProvider';
 import { FaFish, FaChartLine, FaUsers, FaWater, FaShoppingCart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const DashHome = () => {
     const { user } = useContext(AuthProvider);
@@ -104,9 +105,9 @@ const DashHome = () => {
                                     </div>
                                 </div>
                                 
-                                <button className="mt-4 w-full btn btn-sm bg-[#1A5F7A] hover:bg-[#2B7DCE] text-white">
+                                <Link to={"/dashboard/project"} className="mt-4 w-full btn btn-sm bg-[#1A5F7A] hover:bg-[#2B7DCE] text-white">
                                     বিস্তারিত দেখুন
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     ))}

@@ -57,6 +57,10 @@ const router = createBrowserRouter([
         element: <DashHome></DashHome>,
       },
       {
+        path: "/dashboard/project",
+        element: <ProjectDetails></ProjectDetails>,
+      },
+      {
         path: "/dashboard/cart",
         element: <Cart></Cart>,
       },
@@ -94,6 +98,14 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "/dashboard/add-project",
+        element: (
+          <AdminRoute>
+            <AddProject></AddProject>
+          </AdminRoute>
+        ),
+      },
+      {
         path: "/dashboard/item/:id",
         element: (
           <AdminRoute>
@@ -101,7 +113,7 @@ const router = createBrowserRouter([
           </AdminRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://restuarent-server.vercel.app/menu/${params.id}`),
+          fetch(`http://localhost:5000/menu/${params.id}`),
       },
     ],
   },
@@ -120,6 +132,8 @@ import Payment from './Components/Dashboard/Payment/Payment.jsx';
 import OrderHistory from './Components/Dashboard/Payment/OrderHistory.jsx';
 import Hatchery from './Components/OurShop/Hechaery.jsx';
 import FishMarket from './Components/OurShop/FishMarket.jsx';
+import AddProject from './Components/Dashboard/AddProjects/AddProjects.jsx';
+import ProjectDetails from './Components/Dashboard/AddProjects/ProjectDetails.jsx';
 
 
 const queryClient = new QueryClient();
